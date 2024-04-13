@@ -2,9 +2,12 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useRef } from "react";
 
 export default function Home() {
   const data = "Hard";
+  // used for smooth drop of the exercise window for additional info when clicked
+  const exerciseRef = useRef([]);
 
   const exampleValues = [
     {
